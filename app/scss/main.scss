@@ -246,4 +246,68 @@ header {
 	}
 }
 
+.s-reviews {
+	background: #F6F6F6;
+	.reviews-header {
+		height: 90px;
+		border-bottom: 2px solid #e2e2e2;
+		P {
+			margin: 0;
+			font-size: 14px;
+			color: #868686;
+		}
+		select {
+			margin-right: 10px;
+		}
+		button {
+			background-color: #fff;
+			color: #868686;
+		}
+	}
+	.reviews {
+		.review {
+			padding-top: 25px;
+			padding-bottom: 25px;
+			border-bottom: 2px solid #e2e2e2;
+			.user-profile {
+				border-right: 2px solid #e2e2e2;
+				font-size: 14px;
+				color: #868686;
+				img {
+					margin-right: 20px;
+				}
+				.stars {
+					.star,
+					.half-star {
+						width: 15px;
+						height: 14px;
+						margin-right: 2px;
+					}
+				}
+			}
+			.user-text {
+				color: #343434;
+				h3,
+				span {
+					font-size: 16px;
+					font-weight: 600;
+				}
+				p {
+					margin-top: 20px;
+					font-size: 14px;
+					font-style: italic;
+					color: #868686;
+				}
+			}
+		}
+	}
+	button {
+		margin: 0 auto;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
 @import "media";
