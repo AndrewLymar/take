@@ -249,21 +249,22 @@
 			</div>
 		</section>
 		<div class="divider"></div>
-		<div class="s-reviews">
+		<section class="s-reviews">
 			<div class="container">
 				<div class="row justify-content-between align-items-center reviews-header">
 					<p>Reviews (256)</p>
-					<form action="" class="d-flex">
+					<form action="">
 						<select>
-  							<option>Transportation 1</option>
-  							<option>Transportation 2</option>
+ 							<option>Sort</option>
+  							<option>Rating</option>
+  							<option>Date</option>
 						</select>
 						<button type="submit">Post A Review</button>
 					</form>
 				</div>
-				<div class="row flex-column reviews">
-					<div class="row review">
-						<div class="user-profile col-md-4 d-flex align-items-center">
+				<div class="row reviews">
+					<div class="row justify-content-around review">
+						<div class="col-md-3 d-flex align-items-center user-profile">
 							<img src="img/user1.png">
 							<div class="">
 								<p>Anna Marksson<br> Visited Las Vegas</p>
@@ -282,8 +283,8 @@
 							<p>“I don’t know where to start. It was simply amazing! From the time we got there to the staff at our hotel, to our Uber driver, to the meals at our restaurant, i can’t wait until we visit Las Vegas again!”</p>
 						</div>
 					</div>
-					<div class="row review">
-						<div class="user-profile col-md-4 d-flex align-items-center">
+					<div class="row justify-content-around review">
+						<div class="col-md-3 d-flex align-items-center user-profile">
 							<img src="img/user2.png">
 							<div class="">
 								<p>Edward Signim<br>Visited Rome</p>
@@ -302,8 +303,8 @@
 							<p>“Everybody knows how much history this city has, but we were not prepared by just how much it is! At every single corner you can find a piece of history that is there for thousands of years. If you didn’t visit, what you are waiting for?”</p>
 						</div>
 					</div>
-					<div class="row review">
-						<div class="user-profile col-md-4 d-flex align-items-center">
+					<div class="row justify-content-around review">
+						<div class="col-md-3 d-flex align-items-center user-profile">
 							<img src="img/user3.png">
 							<div class="">
 								<p>Jenna Miles<br>Visited Belgrade</p>
@@ -322,8 +323,8 @@
 							<p>“This city is nothing what i expected. Such a lively place, full of color, wonderful people and fantastic food. Service is lovely and my tour guide showed me much more than it was planned, simply because he is amazing at his job! I can’t wait to go back!”</p>
 						</div>
 					</div>
-					<div class="row review">
-						<div class="user-profile col-md-4 d-flex align-items-center">
+					<div class="row justify-content-around review">
+						<div class="col-md-3 d-flex align-items-center user-profile">
 							<img src="img/user4.png">
 							<div class="">
 								<p>Jonathan Bright<br>Visited Tahiti</p>
@@ -343,10 +344,295 @@
 						</div>
 					</div>
 				</div>
-				<button>Load more</button>
+				<div class="d-flex justify-content-center">
+					<button>Load more</button>
+				</div>
 			</div>
-		</div>
+		</section>
 		<div class="divider"></div>
+		<section class="s-buy">
+			<div class="buy-header">
+				<div class="container">
+					<h4>Where do you want to travel today?</h4>
+					<div class="d-flex align-items-center justify-content-between choose-countries">
+						<div class="d-flex">
+							<div class="d-flex align-items-center country">
+								<div class="country-name">USA</div>
+								<img src="img/delete-icn.svg" alt="">
+							</div>
+							<div class="d-flex align-items-center country">
+								<div class="country-name">New York</div>
+								<img src="img/delete-icn.svg" alt="">
+							</div>
+							<div class="d-flex align-items-center country">
+								<div class="country-name">City Life</div>
+								<img src="img/delete-icn.svg" alt="">
+							</div>
+							<div class="d-flex align-items-center country">
+								<div class="country-name">Cheap</div>
+								<img src="img/delete-icn.svg" alt="">
+							</div>
+						</div>
+						<div class="d-flex align-items-center options">
+							<div>List View</div>
+							<div>Map View</div>
+							<button>Sort By</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row justify-content-between buy-cards">
+					<div class="col-md-4 card buy-card">
+						<div class="d-flex justify-content-between align-items-center buy-card-title">
+							<h4>New York Skyline Tour<br>The best of New York</h4>
+							<div>
+								<div class="d-flex stars">
+									<div><img src="img/star.png" class="star" alt="star"></div>
+									<div><img src="img/star.png" class="star" alt="star"></div>
+									<div><img src="img/star.png" class="star" alt="star"></div>
+									<div><img src="img/star.png" class="star" alt="star"></div>
+									<div><img src="img/half-star.png" class="star" alt="star"></div>
+								</div>
+								<div class="reviews-count">146 reviews</div>
+							</div>
+						</div>
+						<div class="buy-card-banner banner-the-best">
+							<div class="d-flex justify-content-end">
+								<div class="price">$15</div>
+							</div>
+						</div>
+						<div class="buy-card-content">
+							<p>Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour.</p>
+						</div>
+						<div class="buy-card-divider"></div>
+						<div class="d-flex justify-content-between buy-card-book">
+							<div class="d-flex flex-column align-items-center">
+								<img src="img/people-icn.svg" alt="user">
+								<p>126 spaces left</p>
+							</div>
+							<button>Book Now</button>
+						</div>
+					</div>
+					<div class="col-md-4 card buy-card">
+						<div class="d-flex justify-content-between align-items-center buy-card-title">
+							<h4>New York Skyline Tour<br>The best of New York</h4>
+							<div>
+								<div class="d-flex stars">
+									<div><img src="img/star.png" class="star" alt="star"></div>
+									<div><img src="img/star.png" class="star" alt="star"></div>
+									<div><img src="img/star.png" class="star" alt="star"></div>
+									<div><img src="img/star.png" class="star" alt="star"></div>
+									<div><img src="img/half-star.png" class="star" alt="star"></div>
+								</div>
+								<div class="reviews-count">146 reviews</div>
+							</div>
+						</div>
+						<div class="buy-card-banner banner-walking-tour">
+							<div class="d-flex justify-content-end">
+								<div class="price">$15</div>
+							</div>
+						</div>
+						<div class="buy-card-content">
+							<p>Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour.</p>
+						</div>
+						<div class="buy-card-divider"></div>
+						<div class="d-flex justify-content-between buy-card-book">
+							<div class="d-flex flex-column align-items-center">
+								<img src="img/people-icn.svg" alt="user">
+								<p>126 spaces left</p>
+							</div>
+							<button>Book Now</button>
+						</div>
+					</div>
+					<div class="col-md-4 card buy-card">
+						<div class="d-flex justify-content-between align-items-center buy-card-title">
+							<h4>New York Skyline Tour<br>The best of New York</h4>
+							<div>
+								<div class="d-flex stars">
+									<div><img src="img/star.png" class="star" alt="star"></div>
+									<div><img src="img/star.png" class="star" alt="star"></div>
+									<div><img src="img/star.png" class="star" alt="star"></div>
+									<div><img src="img/star.png" class="star" alt="star"></div>
+									<div><img src="img/half-star.png" class="star" alt="star"></div>
+								</div>
+								<div class="reviews-count">146 reviews</div>
+							</div>
+						</div>
+						<div class="buy-card-banner banner-foud-tour">
+							<div class="d-flex justify-content-end">
+								<div class="price">$15</div>
+							</div>
+						</div>
+						<div class="buy-card-content">
+							<p>Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour.</p>
+						</div>
+						<div class="buy-card-divider"></div>
+						<div class="d-flex justify-content-between buy-card-book">
+							<div class="d-flex flex-column align-items-center">
+								<img src="img/people-icn.svg" alt="user">
+								<p>126 spaces left</p>
+							</div>
+							<button>Book Now</button>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-between">
+					<div class="col-md-4 cards-container">
+						<div class="card language-card">
+							<div class="language">
+								<div class="d-flex justify-content-between card-container">
+									<p>Language Spoken</p>
+									<img src="img/arrow-down.svg" alt="arrow down">
+								</div>
+							</div>
+							<div class="language">
+								<div class="d-flex justify-content-between card-container">
+									<p>Meal Type</p>
+									<img src="img/arrow-down.svg" alt="arrow down">
+								</div>
+							</div>
+							<div class="language">
+								<div class="d-flex justify-content-between card-container">
+									<p>Excursions</p>
+									<img src="img/arrow-down.svg" alt="arrow down">
+								</div>
+							</div>
+							<div class="language">
+								<div class="d-flex justify-content-between card-container">
+									<p>Hotel Type</p>
+									<img src="img/arrow-down.svg" alt="arrow down">
+								</div>
+							</div>
+							<div class="language">
+								<div class="d-flex justify-content-between card-container">
+									<p>Room Type</p>
+									<img src="img/arrow-down.svg" alt="arrow down">
+								</div>
+							</div>
+							<div class="language">
+								<div class="d-flex justify-content-between card-container">
+									<p>Rent A Car</p>
+									<img src="img/arrow-down.svg" alt="arrow down">
+								</div>
+							</div>
+							<div class="language">
+								<div class="d-flex justify-content-between card-container">
+									<p>Shuttle Transport</p>
+									<img src="img/arrow-down.svg" alt="arrow down">
+								</div>
+							</div>
+							<div class="language">
+								<div class="d-flex justify-content-between card-container">
+									<p>Parking</p>
+									<img src="img/arrow-down.svg" alt="arrow down">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 cards-container">
+						<div class="card destinations-card">
+							<div class="d-flex justify-content-between card-container destinations-card-title">
+								<p>Destinations</p>
+								<img src="img/arrow-up-icn.svg" alt="arrow up">
+							</div>
+							<div class="d-flex flex-column card-container destinations-card-countries">
+								<p>Europe</p>
+								<p>Asia</p>
+								<p>Africa</p>
+								<p>North America</p>
+								<p>South America</p>
+							</div>
+						</div>
+						<div class="card trip-type-card">
+							<div class="d-flex flex-column card-container">
+								<div class="d-flex justify-content-between trip-type-card-title">
+									<p>Trip Type</p>
+									<img src="img/arrow-up-icn.svg" alt="arrow up">
+								</div>
+								<div class="d-flex flex-column">
+									<div class="custom-checkbox-vertical">
+										<label class="d-flex container-checkbox">Round Trip
+  											<input type="checkbox" checked="checked" class="align-self-center">
+  											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="custom-checkbox-vertical">
+										<label class="container-checkbox">One Way
+  											<input type="checkbox">
+  											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card comfort-card">
+							<div class="d-flex flex-column card-container">
+								<div class="d-flex justify-content-between ">
+									<label class="d-flex container-checkbox">First class
+  											<input type="checkbox">
+  											<span class="checkmark"></span>
+										</label>
+									<label class="d-flex container-checkbox">Business
+  											<input type="checkbox">
+  											<span class="checkmark"></span>
+										</label>
+									<label class="d-flex container-checkbox">Coach
+  											<input type="checkbox" checked="checked">
+  											<span class="checkmark"></span>
+										</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 cards-container">
+						<div class="card">
+							<div class="d-flex card-container where-input-card">
+								<form action="">
+									<input type="text" value="" placeholder="Where country you want to go?">
+									<input type="text" value="" placeholder="Where city you want to go?">
+								</form>
+							</div>
+						</div>
+						<div class="card price-card">
+							<div class="d-flex flex-column card-container">
+								<div class="d-flex card-container justify-content-between">
+									<p>Price Range</p>
+									<img src="img/arrow-up-icn.svg" alt="arrow up">
+								</div>
+								<div class="d-flex range">
+									<div class="range-position"></div>
+									<div class="range-position"></div>
+								</div>
+								<div class="d-flex justify-content-between prices">
+									<p>$20</p>
+									<p>$4000</p>
+								</div>
+							</div>
+						</div>
+						<div class="card price-card">
+							<div class="d-flex flex-column card-container">
+								<div class="d-flex custom-checkbox-vertical">
+									<label class="container-checkbox">Round Trip
+  											<input type="checkbox" checked="checked" class="align-self-center">
+  											<span class="checkmark"></span>
+										</label>
+								</div>
+								<div class="d-flex custom-checkbox-vertical">
+									<label class="container-checkbox">One Way
+  											<input type="checkbox">
+  											<span class="checkmark"></span>
+										</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row pagination">
+
+				</div>
+			</div>
+		</section>
 	</header>
 	<footer>
 	</footer>

@@ -4,6 +4,10 @@
 @import "vars";
 @import "normalize";
 @import "global";
+section {
+	background: #F6F6F6;
+}
+
 button {
 	height: 50px;
 	border-radius: 4px;
@@ -203,7 +207,6 @@ header {
 }
 
 .s-contacts {
-	background: #F6F6F6;
 	.container {
 		max-width: 100%;
 		padding-left: 115px;
@@ -247,7 +250,6 @@ header {
 }
 
 .s-reviews {
-	background: #F6F6F6;
 	.reviews-header {
 		height: 90px;
 		border-bottom: 2px solid #e2e2e2;
@@ -255,13 +257,23 @@ header {
 			margin: 0;
 			font-size: 14px;
 			color: #868686;
+			cursor: pointer;
 		}
-		select {
-			margin-right: 10px;
-		}
-		button {
-			background-color: #fff;
-			color: #868686;
+		form {
+			select {
+				width: 125px;
+				height: 40px;
+				margin-right: 10px;
+				padding-left: 20px;
+				border-radius: 4px;
+				border: 0;
+				color: #868686;
+			}
+			button {
+				height: 40px;
+				background-color: #fff;
+				color: #868686;
+			}
 		}
 	}
 	.reviews {
@@ -307,6 +319,283 @@ header {
 		margin-bottom: 40px;
 		padding-left: 50px;
 		padding-right: 50px;
+	}
+}
+
+.s-buy {
+	background: #d7d7d7;
+	.buy-header {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		background: #f6f6f6;
+		color: #868686;
+		h4 {
+			font-size: 18px;
+		}
+		.choose-countries {
+			margin-top: 40px;
+			.country {
+				height: 40px;
+				margin-right: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				border-radius: 6px;
+				background: #fff;
+				&-name {
+					font-size: 14px;
+				}
+				&-name:first-child {
+					margin-right: 20px;
+				}
+				img {
+					cursor: pointer;
+				}
+			}
+			.options {
+				div {
+					margin-right: 40px;
+					cursor: pointer;
+				}
+				button {
+					width: 170px;
+				}
+			}
+		}
+	}
+	.cards-container {
+		max-width: 370px;
+		padding: 0;
+	}
+	.card {
+		max-width: 370px;
+		margin-top: 20px;
+		margin-bottom: 25px;
+		padding: 20px 0;
+		background: #fff;
+		border-radius: 6px;
+		label {
+			color: #868686;
+			margin: 0;
+		}
+		.container-checkbox input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+		}
+		.card-container {
+			padding-left: 15px;
+			padding-right: 15px;
+			.custom-checkbox-vertical {
+				margin-bottom: 15px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.checkmark {
+			position: absolute;
+			top: 10%;
+			left: 0;
+			height: 20px;
+			width: 20px;
+			border-radius: 4px;
+			background-color: #fff;
+			border: 2px solid #E2E2E2;
+			background-color: #fff;
+		}
+		.container-checkbox {
+			display: block;
+			position: relative;
+			padding-left: 35px;
+			cursor: pointer;
+			font-size: 16px;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			input:checked~.checkmark {
+				border: none;
+				background-color: #3EC6FF;
+			}
+			input:checked~.checkmark:after {
+				display: block;
+			}
+			.checkmark:after {
+				left: 8px;
+				top: 5px;
+				width: 5px;
+				height: 10px;
+				border: solid white;
+				border-width: 0 3px 3px 0;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+		}
+		.checkmark:after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
+	}
+	.buy-card {
+		.stars {
+			.star {
+				width: 15px;
+				height: 14px;
+			}
+		}
+		&-title {
+			padding-left: 15px;
+			padding-right: 15px;
+			h4,
+			.reviews-count {
+				font-size: 14px;
+			}
+			h4 {
+				font-weight: 600;
+			}
+			.reviews-count {
+				color: #868686;
+			}
+		}
+		&-banner {
+			height: 160px;
+			margin-top: 30px;
+			background-size: contain;
+			.price {
+				margin-top: 20px;
+				padding: 5px 15px;
+				background: #3EC6FF;
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+				font-size: 14px;
+				color: #fff;
+			}
+		}
+		&-banner.banner-the-best {
+			background: url("../img/skyline.jpg") no-repeat;
+		}
+		&-banner.banner-walking-tour {
+			background: url("../img/railroad.jpg") no-repeat;
+		}
+		&-banner.banner-foud-tour {
+			background: url("../img/food.jpg") no-repeat;
+		}
+		&-content {
+			padding-left: 15px;
+			padding-right: 15px;
+			text-align: center;
+			p {
+				margin-top: 20px;
+				font-size: 14px;
+				color: #868686;
+			}
+		}
+		&-divider {
+			border-top: 2px solid #f5f5f5;
+		}
+		&-book {
+			margin-top: 25px;
+			padding-left: 15px;
+			padding-right: 15px;
+			p {
+				margin-top: 9px;
+				font-size: 14px;
+				color: #868686;
+			}
+			button {
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+		}
+	}
+	.language-card {
+		.language {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-bottom: 2px solid #f7f7f7;
+			p {
+				margin: 0;
+				color: #343434;
+			}
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+	.destinations-card {
+		height: 195px;
+		&-title {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-bottom: 2px solid #f7f7f7;
+		}
+		&-countries {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			p {
+				font-size: 14px;
+				line-height: 1.3em;
+				color: #868686;
+				cursor: pointer;
+			}
+		}
+	}
+	.trip-type-card {
+		&-title {
+			margin-bottom: 25px;
+		}
+	}
+	.comfort-card {
+		padding: 30px 0;
+		.container-checkbox {
+			margin-bottom: 0;
+		}
+	}
+	.where-input-card {
+		padding-top: 22px;
+		padding-bottom: 22px;
+		input {
+			width: 100%;
+			height: 50px;
+			padding: 16px 18px;
+			border: 2px solid #F5F5F5;
+			border-radius: 4px;
+			font-size: 14px;
+			color: #868686;
+			&:first-child {
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.price-card {
+		.range {
+			position: relative;
+			margin-top: 25px;
+			height: 10px;
+			background: #3EC6FF;
+			border-radius: 15px;
+			&-position {
+				width: 24px;
+				height: 24px;
+				position: relative;
+				top: -7px;
+				background-color: #fff;
+				border: 3px solid #3EC6FF;
+				border-radius: 12px;
+			}
+		}
+		.prices {
+			margin-top: 10px;
+			font-size: 16px;
+			color: #868686;
+		}
+	}
+	.pagination {
+		margin-top: 50px;
+		height: 50px;
+		background-color: #fff;
 	}
 }
 
