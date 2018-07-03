@@ -9,6 +9,14 @@ ul {
 	}
 }
 
+a {
+	color: #868686;
+	&:hover {
+		color: #868686;
+		text-decoration: none;
+	}
+}
+
 h1,
 h2,
 h3,

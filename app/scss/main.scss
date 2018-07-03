@@ -323,8 +323,10 @@ header {
 }
 
 .s-buy {
+	padding-bottom: 20px;
 	background: #d7d7d7;
 	.buy-header {
+		margin-bottom: 20px;
 		padding-top: 40px;
 		padding-bottom: 40px;
 		background: #f6f6f6;
@@ -368,7 +370,6 @@ header {
 	}
 	.card {
 		max-width: 370px;
-		margin-top: 20px;
 		margin-bottom: 25px;
 		padding: 20px 0;
 		background: #fff;
@@ -584,6 +585,10 @@ header {
 				background-color: #fff;
 				border: 3px solid #3EC6FF;
 				border-radius: 12px;
+				box-shadow: 0px 29px 79px -29px rgba(0, 0, 0, 0.75);
+				&:last-child {
+					margin-left: 220px;
+				}
 			}
 		}
 		.prices {
@@ -593,9 +598,126 @@ header {
 		}
 	}
 	.pagination {
-		margin-top: 50px;
-		height: 50px;
+		height: 68px;
+		margin-top: 25px;
+		padding-left: 15px;
+		padding-right: 15px;
 		background-color: #fff;
+		img,
+		p {
+			cursor: pointer;
+		}
+		p {
+			margin-right: 35px;
+			font-size: 14px;
+			color: #868686;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.s-map {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.s-video {
+	padding-top: 55px;
+	padding-bottom: 25px;
+	background: url("../img/dubai.jpg");
+	h2 {
+		font-size: 48px;
+		font-weight: 700;
+		color: #fff;
+	}
+	.embed-responsive {
+		max-width: 700px;
+	}
+}
+
+.s-download {
+	padding-top: 25px;
+	color: #868686;
+	h2 {
+		font-size: 42px;
+		font-weight: 600;
+	}
+	p {
+		margin-top: 30px;
+		line-height: 1.2em;
+	}
+	button {
+		width: 270px;
+		margin-top: 50px;
+	}
+}
+
+footer {
+	padding-top: 80px;
+	background: #F6F6F6;
+	color: #868686;
+	.container:first-child {
+		padding-bottom: 25px;
+	}
+	h4 {
+		font-size: 16px;
+		color: #343434;
+	}
+	ul {
+		margin-top: 45px;
+		li {
+			a {
+				font-size: 14px;
+				cursor: pointer;
+			}
+		}
+	}
+	form {
+		margin-top: 45px;
+		input {
+			width: 258px;
+			height: 45px;
+			padding-left: 20px;
+			margin-right: 25px;
+			border-radius: 4px;
+			border: 0;
+		}
+		button {
+			width: 170px;
+			height: 45px;
+		}
+	}
+	.socials {
+		margin-top: 60px;
+		.social {
+			width: 40px;
+			height: 40px;
+			margin-right: 30px;
+			background: #fff;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+	}
+	.footer-divider {
+		border-bottom: 1px solid #E2E2E2;
+	}
+	.footer-info {
+		height: 95px;
+		font-size: 14px;
+		ul {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			li {
+				margin-right: 15px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
 	}
 }
 
