@@ -370,18 +370,23 @@ header {
 	}
 	.card {
 		max-width: 370px;
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 		padding: 20px 0;
 		background: #fff;
 		border-radius: 6px;
-		label {
-			color: #868686;
-			margin: 0;
-		}
-		.container-checkbox input {
-			position: absolute;
-			opacity: 0;
+		img {
 			cursor: pointer;
+		}
+		label {
+			margin: 0;
+			color: #868686;
+		}
+		.container-checkbox {
+			input {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+			}
 		}
 		.card-container {
 			padding-left: 15px;
@@ -571,24 +576,40 @@ header {
 		}
 	}
 	.price-card {
-		.range {
-			position: relative;
-			margin-top: 25px;
-			height: 10px;
-			background: #3EC6FF;
-			border-radius: 15px;
-			&-position {
-				width: 24px;
-				height: 24px;
+		.range-container {
+			.range-off,
+			.range-on {
 				position: relative;
-				top: -7px;
-				background-color: #fff;
-				border: 3px solid #3EC6FF;
-				border-radius: 12px;
-				box-shadow: 0px 29px 79px -29px rgba(0, 0, 0, 0.75);
-				&:last-child {
-					margin-left: 220px;
+				margin-top: 25px;
+				height: 10px;
+				border-radius: 15px;
+				.range-position {
+					width: 24px;
+					height: 24px;
+					top: -7px;
+					position: relative;
+					background-color: #fff;
+					border: 3px solid #3EC6FF;
+					border-radius: 12px;
+					box-shadow: 0px 29px 79px -29px rgba(0, 0, 0, 0.75);
+					cursor: pointer;
 				}
+				.range-position-one {
+					left: 1px;
+				}
+				.range-position-two {
+					left: -10px;
+				}
+			}
+			.range-on {
+				width: 80%;
+				border-radius: 16px 0px 0px 16px;
+				background: #3EC6FF;
+			}
+			.range-off {
+				width: 20%;
+				border-radius: 0px 16px 16px 0px;
+				background: #F6F6F6;
 			}
 		}
 		.prices {
