@@ -721,6 +721,9 @@ footer {
 			background: #fff;
 			border-radius: 50%;
 			cursor: pointer;
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 	.footer-divider {
