@@ -10,45 +10,68 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="115">
 	<header>
-		<nav class="navbar navbar-expand-lg fixed-top">
+		<nav class="navbar navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="115">
 			<div class="container">
 				<a class="navbar-brand" href="#">TakeMe</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-				<div class="collapse navbar-collapse" id="navbarNav">
+				<div class="collapse navbar-collapse">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Locations<span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="#location">Locations<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Accommodation</a>
+							<a class="nav-link" href="#contact-us">Contact Us</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Travel Guides</a>
+							<a class="nav-link" href="#reviews">Reviews</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Where To Stay</a>
+							<a class="nav-link" href="#buy">Buy</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contact Us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Log In</a>
+							<a class="nav-link" href="#login">Log In</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
+		<!--
+		<nav class="menu">
+			<a class="navbar-brand" href="#">TakeMe</a>
+			<img src="img/menu.svg" alt="menu-icon" class="menu-icon">
+			<ul>
+				<li>
+					<a href="#location">Locations</a>
+				</li>
+				<li>
+					<a href="#">Accommodation</a>
+				</li>
+				<li>
+					<a href="#">Travel Guides</a>
+				</li>
+				<li>
+					<a href="#">Where To Stay</a>
+				</li>
+				<li>
+					<a href="#">Contact Us</a>
+				</li>
+				<li>
+					<a href="#">Log In</a>
+				</li>
+			</ul>
+		</nav>
+		-->
 		<div class="d-flex banner">
 			<div class="d-flex flex-column  container justify-content-center align-items-center ">
 				<h1>Find Your Dream Vacation Location</h1>
 				<p>Search hundreds of locations from around the world and find your perfect vacation location.</p>
 				<form class="row banner-content justify-content-center justify-content-md-around justify-content-lg-between">
 					<input type="text" name="country" placeholder="Country or ZIP code" class="col-9 col-md-5 col-lg-4">
-					<select class="col-9 col-md-5 col-lg-3">
+					<select class="col-9 col-md-5 col-lg-3 d-flex align-items-center justify-content-center">
   						<option>Transportation 1</option>
   						<option>Transportation 2</option>
 					</select>
@@ -59,7 +82,7 @@
 		</div>
 	</header>
 	<div class="divider"></div>
-	<section class="s-location">
+	<section class="s-location" id="location">
 		<div class="container">
 			<div class="row justify-content-center justify-content-xl-between">
 				<div class="col-12 col-xl-4 align-self-center">
@@ -137,8 +160,8 @@
 	<div class="divider"></div>
 	<section class="s-slider">
 		<div class="container">
-			<div class="row justify-content-xl-between justify-content-around">
-				<img src="img/arrow-left.svg" alt="">
+			<div class="row justify-content-xl-between justify-content-around align-items-center">
+				<img src="img/arrow-left.svg" alt="arrow left">
 				<div class="col-12 col-md-10 col-xl-4 d-none d-xl-block slide slide1">
 					<div class="d-flex justify-content-end">
 						<div class="d-flex flex-column">
@@ -156,7 +179,6 @@
 						<p>Professional Guides</p>
 						<h2>Sea Voyages</h2>
 					</div>
-
 				</div>
 				<div class="col-12 col-lg-6 col-xl-4 d-none d-xl-block slide slide2">
 					<div class="d-flex justify-content-end">
@@ -173,7 +195,6 @@
 						<p>Safe Guides</p>
 						<h2>Mountain Climbs</h2>
 					</div>
-
 				</div>
 				<div class="col-8 col-sm-12 col-lg-6 col-xl-4 slide slide3">
 					<div class="d-flex justify-content-end">
@@ -182,7 +203,7 @@
 								<div><img src="img/star.png" class="star" alt="star"></div>
 								<div><img src="img/star.png" class="star" alt="star"></div>
 								<div><img src="img/star.png" class="star" alt="star"></div>
-								<div><img src="img/half-star.png" class="star" alt="star"></div>
+								<div><img src="img/half-star.png" class="star" alt="half star"></div>
 							</div>
 							<p class="likes">126 Visited</p>
 						</div>
@@ -192,7 +213,7 @@
 						<h2>Quad Rides</h2>
 					</div>
 				</div>
-				<img src="img/arrow-right.svg" alt="">
+				<img src="img/arrow-right.svg" alt="arrow right">
 			</div>
 		</div>
 	</section>
@@ -209,7 +230,7 @@
 		</div>
 	</section>
 	<div class="divider"></div>
-	<section class="s-contacts">
+	<section class="s-contacts" id="contact-us">
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-md-12 col-lg-6">
@@ -250,7 +271,7 @@
 		</div>
 	</section>
 	<div class="divider"></div>
-	<section class="s-reviews">
+	<section class="s-reviews" id="reviews">
 		<div class="container">
 			<div class="row justify-content-center justify-content-sm-around justify-content-xl-between align-items-center flex-wrap reviews-header">
 				<form action="">
@@ -353,7 +374,7 @@
 		</div>
 	</section>
 	<div class="divider"></div>
-	<section class="s-buy">
+	<section class="s-buy" id="buy">
 		<div class="buy-header ">
 			<div class="container">
 				<h4 class="text-center text-lg-left">Where do you want to travel today?</h4>
@@ -386,7 +407,7 @@
 		</div>
 		<div class="container">
 			<div class="row justify-content-center justify-content-sm-around justify-content-xl-between buy-cards">
-				<div class="col-sm-12 col-lg-md-5 col-lg-4 col-xl-4 card buy-card">
+				<div class="col-sm-12 col-lg-md-5 col-lg-3 col-xl-4 card buy-card">
 					<div class="d-flex justify-content-between align-items-center buy-card-title">
 						<h4>New York Skyline Tour<br>The best of New York</h4>
 						<div>
@@ -409,7 +430,7 @@
 						<p>Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour.</p>
 					</div>
 					<div class="buy-card-divider"></div>
-					<div class="d-flex justify-content-between buy-card-book">
+					<div class="d-flex flex-lg-column flex-xl-row justify-content-between buy-card-book">
 						<div class="d-flex flex-column align-items-center">
 							<img src="img/people-icn.svg" alt="user">
 							<p>126 spaces left</p>
@@ -417,7 +438,7 @@
 						<button>Book Now</button>
 					</div>
 				</div>
-				<div class="col-sm-12 col-lg-md-5 col-lg-4 col-xl-4 card buy-card">
+				<div class="col-sm-12 col-lg-md-5 col-lg-3 col-xl-4 card buy-card">
 					<div class="d-flex justify-content-between align-items-center buy-card-title">
 						<h4>New York Skyline Tour<br>The best of New York</h4>
 						<div>
@@ -440,7 +461,7 @@
 						<p>Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour.</p>
 					</div>
 					<div class="buy-card-divider"></div>
-					<div class="d-flex justify-content-between buy-card-book">
+					<div class="d-flex flex-lg-column flex-lg-column flex-xl-row justify-content-between buy-card-book">
 						<div class="d-flex flex-column align-items-center">
 							<img src="img/people-icn.svg" alt="user">
 							<p>126 spaces left</p>
@@ -448,7 +469,7 @@
 						<button>Book Now</button>
 					</div>
 				</div>
-				<div class="col-sm-12 col-lg-md-5 col-lg-4 col-xl-4 card buy-card">
+				<div class="col-sm-12 col-lg-md-5 col-lg-3 col-xl-4 card buy-card">
 					<div class="d-flex justify-content-between align-items-center buy-card-title">
 						<h4>New York Skyline Tour<br>The best of New York</h4>
 						<div>
@@ -471,7 +492,7 @@
 						<p>Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour.</p>
 					</div>
 					<div class="buy-card-divider"></div>
-					<div class="d-flex justify-content-between buy-card-book">
+					<div class="d-flex flex-lg-column flex-xl-row justify-content-between buy-card-book">
 						<div class="d-flex flex-column align-items-center">
 							<img src="img/people-icn.svg" alt="user">
 							<p>126 spaces left</p>
@@ -484,49 +505,49 @@
 				<div class="col-sm-12 col-lg-md-5 col-lg-3 col-xl-4 cards-container">
 					<div class="card language-card">
 						<div class="language">
-							<div class="d-flex justify-content-between card-container">
+							<div class="d-flex justify-content-between align-items-center card-container">
 								<p>Language Spoken</p>
 								<img src="img/arrow-down.svg" alt="arrow down">
 							</div>
 						</div>
 						<div class="language">
-							<div class="d-flex justify-content-between card-container">
+							<div class="d-flex justify-content-between align-items-center card-container">
 								<p>Meal Type</p>
 								<img src="img/arrow-down.svg" alt="arrow down">
 							</div>
 						</div>
 						<div class="language">
-							<div class="d-flex justify-content-between card-container">
+							<div class="d-flex justify-content-between align-items-center card-container">
 								<p>Excursions</p>
 								<img src="img/arrow-down.svg" alt="arrow down">
 							</div>
 						</div>
 						<div class="language">
-							<div class="d-flex justify-content-between card-container">
+							<div class="d-flex justify-content-between align-items-center card-container">
 								<p>Hotel Type</p>
 								<img src="img/arrow-down.svg" alt="arrow down">
 							</div>
 						</div>
 						<div class="language">
-							<div class="d-flex justify-content-between card-container">
+							<div class="d-flex justify-content-between align-items-center card-container">
 								<p>Room Type</p>
 								<img src="img/arrow-down.svg" alt="arrow down">
 							</div>
 						</div>
 						<div class="language">
-							<div class="d-flex justify-content-between card-container">
+							<div class="d-flex justify-content-between align-items-center card-container">
 								<p>Rent A Car</p>
 								<img src="img/arrow-down.svg" alt="arrow down">
 							</div>
 						</div>
 						<div class="language">
-							<div class="d-flex justify-content-between card-container">
+							<div class="d-flex justify-content-between align-items-center card-container">
 								<p>Shuttle Transport</p>
 								<img src="img/arrow-down.svg" alt="arrow down">
 							</div>
 						</div>
 						<div class="language">
-							<div class="d-flex justify-content-between card-container">
+							<div class="d-flex justify-content-between align-items-center card-container">
 								<p>Parking</p>
 								<img src="img/arrow-down.svg" alt="arrow down">
 							</div>
@@ -535,7 +556,7 @@
 				</div>
 				<div class="col-sm-12 col-lg-md-5 col-lg-3 col-xl-4 cards-container">
 					<div class="card destinations-card">
-						<div class="d-flex justify-content-between card-container destinations-card-title">
+						<div class="d-flex justify-content-between  align-items-center card-container destinations-card-title">
 							<p>Destinations</p>
 							<img src="img/arrow-up-icn.svg" alt="arrow up">
 						</div>
@@ -549,7 +570,7 @@
 					</div>
 					<div class="card trip-type-card">
 						<div class="d-flex flex-column card-container">
-							<div class="d-flex justify-content-between trip-type-card-title">
+							<div class="d-flex justify-content-between align-items-center trip-type-card-title">
 								<p>Trip Type</p>
 								<img src="img/arrow-up-icn.svg" alt="arrow up">
 							</div>
@@ -599,7 +620,7 @@
 					</div>
 					<div class="card price-card">
 						<div class="d-flex flex-column card-container">
-							<div class="d-flex justify-content-between">
+							<div class="d-flex justify-content-between align-items-center">
 								<p>Price Range</p>
 								<img src="img/arrow-up-icn.svg" alt="arrow up">
 							</div>
@@ -624,19 +645,19 @@
 								<label class="container-checkbox">Round Trip
   											<input type="checkbox" checked="checked" class="align-self-center">
   											<span class="checkmark"></span>
-										</label>
+								</label>
 							</div>
 							<div class="d-flex custom-checkbox-vertical">
 								<label class="container-checkbox">One Way
   											<input type="checkbox">
   											<span class="checkmark"></span>
-										</label>
+								</label>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row justify-content-between pagination">
+			<div class="row justify-content-between align-items-center pagination">
 				<img src="img/arrow-left.svg" alt="arrow left">
 				<div class="d-flex align-items-center pagination-pages">
 					<p>1</p>
@@ -681,7 +702,7 @@
 		</div>
 	</section>
 	<div class="divider"></div>
-	<footer>
+	<footer id="login">
 		<div class="container">
 			<div class="row justify-content-around justify-content-xl-between">
 				<div class="col-12 col-md-5 d-flex justify-content-around justify-content-xl-between flex-wrap">
@@ -719,7 +740,7 @@
 					</div>
 				</div>
 				<div class="col-10 col-sm-8 col-md-5 footer-subscribe">
-					<h4 class="text-center">Stay in Touch</h4>
+					<h4 class="text-center text-md-left">Stay in Touch</h4>
 					<form action="">
 						<input type="text text-md-left" placeholder="Your Email">
 						<button>Subscribe</button>
@@ -757,6 +778,7 @@
 		<div class="divider"></div>
 	</footer>
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
 </body>
 
 </html>

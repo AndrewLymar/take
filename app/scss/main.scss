@@ -1,8 +1,7 @@
-@import "../libs/bootstrap.min";
-@import "../libs/bootstrap-grid.min";
+@import "../css/bootstrap.min";
+@import "../css/normalize";
 @import "fonts";
 @import "vars";
-@import "normalize";
 @import "global";
 section {
 	background: #F6F6F6;
@@ -21,6 +20,20 @@ button {
 	width: 100%;
 	height: 20px;
 	background: #D7D7D7;
+}
+
+.custom-select {
+	background-image: url('../img/arrow-down.svg');
+	background-repeat: no-repeat;
+	border-radius: 4px;
+	border: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	-ms-appearance: none;
+	appearance: none!important;
+	cursor: pointer;
 }
 
 header {
@@ -66,10 +79,16 @@ header {
 			select {
 				height: 50px;
 				border-radius: 4px;
-				border: 0;
+				border: 2px solid #F5F5F5;
+				color: #b7b7b7;
 			}
 			select {
-				color: #757575;
+				@extend .custom-select;
+				padding-left: 20px;
+				background-position: 95% center;
+			}
+			select::-ms-expand {
+				display: none;
 			}
 		}
 	}
@@ -261,13 +280,14 @@ header {
 		}
 		form {
 			select {
+				@extend .custom-select;
 				width: 125px;
 				height: 40px;
 				margin-right: 10px;
 				padding-left: 20px;
-				border-radius: 4px;
-				border: 0;
-				color: #868686;
+			}
+			select::-ms-expand {
+				display: none;
 			}
 			button {
 				height: 40px;
