@@ -22,6 +22,7 @@ gulp.task('js', function () {
 	return gulp.src([
 		'app/js/jquery.min.js',
 		'app/js/bootstrap.min.js',
+		'app/js/mobileMenu.js',
 		'app/js/common.js'
 		])
 		.pipe(concat('scripts.min.js'))

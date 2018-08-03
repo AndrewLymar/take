@@ -40,20 +40,23 @@ header {
 	height: 940px;
 	nav {
 		width: 100%;
+		margin: 0 auto;
 		height: 115px;
 		background: #fff;
 		.navbar-brand {
 			font-family: 'Kaushan Script', cursive;
 			font-size: 48px;
-			color: #3ec6ff;
+			color: #3ec6ff!important;
 			text-decoration: none;
 		}
 		ul {
+			display: flex;
+			margin: 0;
 			li {
 				margin-right: 45px;
 				a {
 					font-size: 18px;
-					color: #343434;
+					color: #343434!important;
 				}
 			}
 		}

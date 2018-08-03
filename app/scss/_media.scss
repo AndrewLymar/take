@@ -28,7 +28,44 @@
 	}
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 993px) {
+	nav {
+		padding: 0!important;
+		.navbar-mobile-container {
+			width: 100%;
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+		.container {
+			position: relative;
+			ul {
+				display: none;
+				position: absolute;
+				top: 101px;
+				width: 100%;
+				flex-direction: column;
+				padding-top: 25px;
+				padding-bottom: 25px;
+				background-color: #fff;
+				li {
+					margin: 0 auto;
+					a {
+						font-size: 28px;
+					}
+				}
+			}
+		}
+	}
+	.s-buy {
+		.buy-header {
+			.choose-countries {
+				justify-content: center;
+				.options {
+					margin-top: 25px;
+				}
+			}
+		}
+	}
 	.banner {
 		form {
 			input,
@@ -68,19 +105,6 @@
 		.container {
 			padding-right: 50px;
 			padding-left: 50px;
-		}
-	}
-}
-
-@media only screen and (max-width: 913px) {
-	.s-buy {
-		.buy-header {
-			.choose-countries {
-				justify-content: center;
-				.options {
-					margin-top: 25px;
-				}
-			}
 		}
 	}
 }
